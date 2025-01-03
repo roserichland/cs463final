@@ -26,19 +26,22 @@ body {
   font-family: "Arial", sans-serif;
   background-color: var(--cyan);
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
-  height: 100vh;
-  padding: 20px;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
   color: var(--darkgray);
 }
 
 main {
   background-color: var(--lightlightgray);
-  border-radius: 8px;
+  border-radius: 4px;
   padding: 30px;
   width: 100%;
-  max-width: 800px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 h1 {
@@ -127,7 +130,74 @@ button:focus {
   text-align: center;
 }
 
-/* Responsive Design/Media Queries */
+/* Navbar */
+nav {
+  background-color: var(--darkgray);
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  margin: 0;
+  box-shadow: 0 4px 2px -2px gray;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.navbar li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.navbar a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 10px 15px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: var(--cyan);
+  color: var(--darkgray);
+}
+
+.navbar a:focus {
+  outline: none;
+  background-color: var(--cyan);
+  color: var(--darkgray);
+}
+
+.navbar .active {
+  background-color: var(--cyan);
+  color: var(--darkgray);
+}
+
+/* Responsive Navbar */
+@media (max-width: 600px) {
+  .navbar {
+    display: block;
+  }
+
+  .navbar li {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+/* Media Queries */
 @media (min-width: 600px) {
   main {
     padding: 40px;
@@ -164,6 +234,10 @@ button:focus {
 @media (min-width: 1024px) {
   main {
     padding: 50px;
+    max-width: 1000px;
+  }
+
+  .contact-form main {
     max-width: 800px;
   }
 
@@ -205,11 +279,14 @@ button:focus {
   }
 }
 
-/* Small screens */
+/* Small screen */
 @media (max-width: 599px) {
   main {
     padding: 20px;
     width: 100%;
+  }
+  .contact-form main {
+    min-width: 300px;
   }
 
   h2 {
@@ -236,17 +313,30 @@ button:focus {
   .button-container {
     display: flex;
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
+    justify-content: center;
     margin-top: 20px;
   }
 
+  .btn.primary {
+    padding: 12px;
+    font-size: 0.9rem;
+  }
+
   .btn.secondary {
+    padding: 12px;
+    font-size: 0.9rem;
+    margin: 0;
     margin-top: 10px;
   }
 }
 
 /* Very small screens */
 @media (max-width: 400px) {
+  .contact-form main {
+    min-width: 300px;
+  }
+
   h1 {
     font-size: 1.5rem;
   }
@@ -259,6 +349,14 @@ button:focus {
     font-size: 0.875rem;
   }
 
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
   .btn.primary {
     padding: 12px;
     font-size: 0.9rem;
@@ -267,5 +365,7 @@ button:focus {
   .btn.secondary {
     padding: 12px;
     font-size: 0.9rem;
+    margin: 0;
+    margin-top: 10px;
   }
 }
