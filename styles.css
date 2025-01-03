@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #ffffff;
+  --darkgray: #333333;
+  --mediumgray: #555555;
+  --gray: #bebebe;
+  --lightgray: #dcdcdc;
+  --lightlightgray: #f3f3f3;
+  --black: #080808;
+  --teal: #006060;
+  --lightteal: #008080;
+  --purple: #800080;
+  --navy: #000080;
+  --cyan: #17a2b8;
+  --lightcyan: #00b9d5;
+  --violetred: #c71585;
+  --red: #ff0000;
+  --orange: #ffa500;
+  --green: #006400;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: var(--cyan);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+  color: var(--darkgray);
+}
+
+main {
+  background-color: var(--lightlightgray);
+  border-radius: 8px;
+  padding: 30px;
+  width: 100%;
+  max-width: 800px;
+}
+
+h1 {
+  text-align: center;
+  color: var(--darkgray);
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 1.75rem;
+  margin-bottom: 10px;
+  color: var(--cyan);
+}
+
+small {
+  font-size: 0.875rem;
+  color: var(--mediumgray);
+  display: block;
+  margin-bottom: 20px;
+}
+
+/* Styles for form */
+.input-group {
+  margin-bottom: 15px;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: var(--darkgray);
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: var(--darkgray);
+}
+
+fieldset {
+  border: 1 px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+legend {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+label {
+  display: inline-block;
+  margin-right: 20px;
+  font-weight: 400;
+}
+
+/* Buttons */
+button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.btn.primary {
+  background-color: var(--cyan);
+  color: var(--white);
+}
+
+.btn.secondary {
+  background-color: var(--lightlightgray);
+  color: var(--darkgray);
+  margin-left: 10px;
+}
+
+button:focus {
+  outline: none;
+}
+
+.button-container {
+  text-align: center;
+}
