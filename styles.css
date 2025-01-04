@@ -29,7 +29,6 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  min-height: 100vh;
   padding: 0;
   margin: 0;
   color: var(--darkgray);
@@ -38,10 +37,13 @@ body {
 main {
   background-color: var(--lightlightgray);
   border-radius: 4px;
-  padding: 30px;
-  width: 100%;
+  width: 80%;
   max-width: 1000px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 h1 {
@@ -61,6 +63,22 @@ small {
   color: var(--mediumgray);
   display: block;
   margin-bottom: 20px;
+}
+
+.container {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* Styles for About*/
+.profile-image {
+  width: 30vw;
+  height: 30vw;
+  border-radius: 50%;
+  align-items: center;
 }
 
 /* Styles for form */
@@ -231,14 +249,14 @@ html {
 }
 
 /* Large screen */
-@media (min-width: 1024px) {
+@media (min-width: 1000px) {
   main {
     padding: 50px;
     max-width: 1000px;
   }
 
-  .contact-form main {
-    max-width: 800px;
+  .contact-form .about main {
+    max-width: 8vw;
   }
 
   h1 {
@@ -285,7 +303,7 @@ html {
     padding: 20px;
     width: 100%;
   }
-  .contact-form main {
+  .contact-form .about main {
     min-width: 300px;
   }
 
@@ -333,7 +351,7 @@ html {
 
 /* Very small screens */
 @media (max-width: 400px) {
-  .contact-form main {
+  .contact-form .about main {
     min-width: 300px;
   }
 
