@@ -8,3 +8,6 @@ form has firstname, lastname, phone, email, pronouns, topics of interest, and co
 
 Making a particular location in the nav bar active:
 https://www.reddit.com/r/HTML/comments/i7w71g/how_do_i_make_my_navigation_bar_highlight_which/
+
+CSS reminders:
+https://htmlcheatsheet.com/css/

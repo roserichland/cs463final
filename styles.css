@@ -73,7 +73,7 @@ small {
   justify-content: center;
   align-items: center;
 }
-/* Styles for About*/
+/* About*/
 .profile-image {
   width: 30vw;
   height: 30vw;
@@ -81,7 +81,9 @@ small {
   align-items: center;
 }
 
-/* Styles for form */
+/* Previous Work */
+
+/* Form */
 .input-group {
   margin-bottom: 15px;
   width: 100%;
