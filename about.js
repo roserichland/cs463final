@@ -7,18 +7,12 @@ document.addEventListener("DOMContentLoaded", () => {
   img.classList.add("profile-image");
 
   let paragraph = document.createElement("p");
-  const firstLine = "I am Rose and I am a Digital Product Developer ";
   const remainingText =
-    "with over 8 years of experience, focusing on creating seamless user experiences and interfaces, particularly in the medical and technology sectors. My journey began with a B.S. in Psychology from Oregon State University and has evolved through a Master’s in Education and multiple certifications in UX, accessibility, and coding. These foundations have informed my holistic approach to design, blending human-centered insights with technical expertise.";
-
-  let firstLineSpan = document.createElement("span");
-  firstLineSpan.textContent = firstLine;
-  firstLineSpan.classList.add("first-line");
+    "I am Rose and I am a Digital Product Developer with over 8 years of experience, focusing on creating seamless user experiences and interfaces, particularly in the medical and technology sectors. My journey began with a B.S. in Psychology from Oregon State University and has evolved through a Master’s in Education and multiple certifications in UX, accessibility, and coding. These foundations have informed my holistic approach to design, blending human-centered insights with technical expertise.";
 
   let remainingTextSpan = document.createElement("span");
   remainingTextSpan.textContent = remainingText;
 
-  paragraph.appendChild(firstLineSpan);
   paragraph.appendChild(remainingTextSpan);
   paragraph.classList.add("text");
 

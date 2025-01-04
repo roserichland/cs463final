@@ -162,6 +162,10 @@ nav {
   box-shadow: 0 4px 2px -2px gray;
 }
 
+header {
+  width: 100%;
+}
+
 body,
 html {
   margin: 0;
@@ -341,6 +345,8 @@ html {
   .btn.primary {
     padding: 12px;
     font-size: 0.9rem;
+    align-items: center;
+    justify-content: center;
   }
 
   .btn.secondary {

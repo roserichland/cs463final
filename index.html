@@ -4,25 +4,38 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projects</title>
+    <title>Welcome</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body class="landing-page">
     <header>
       <nav>
         <ul class="navbar">
           <li><a href="about.html">About Me</a></li>
           <li><a href="previous-work.html">Previous Work</a></li>
-          <li><a href="projects.html" class="active">Projects</a></li>
+          <li><a href="projects.html">Projects</a></li>
           <li><a href="contact-form.html">Contact Me</a></li>
         </ul>
       </nav>
     </header>
-    <main>
-      <h1>Projects</h1>
+
+    <main class="landing-content">
+      <div class="welcome-message">
+        <h1>Welcome to My Website!</h1>
+        <p>I'm glad you're here! Let me fill you in.</p>
+        <button id="learnMoreBtn" class="btn primary">Learn More</button>
+      </div>
     </main>
+
     <footer>
       <p>&copy; 2025 Rose Addis. All Rights Reserved.</p>
     </footer>
+    <script>
+      document
+        .getElementById("learnMoreBtn")
+        .addEventListener("click", function () {
+          window.location.href = "about.html";
+        });
+    </script>
   </body>
 </html>

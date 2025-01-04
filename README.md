@@ -11,3 +11,6 @@ https://www.reddit.com/r/HTML/comments/i7w71g/how_do_i_make_my_navigation_bar_hi
 
 CSS reminders:
 https://htmlcheatsheet.com/css/
+
+PDF embedding:
+https://stackoverflow.com/questions/25766131/embed-pdf-at-full-height
