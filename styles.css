@@ -74,6 +74,7 @@ small {
   align-items: center;
 }
 
+/*Landing Page */
 .landing-content {
   display: flex;
   justify-content: center;
@@ -83,10 +84,25 @@ small {
   height: 100vh;
 }
 
+.image-container {
+  width: 100%;
+  max-width: 300px;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.landing-profile-image {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  align-items: center;
+}
+
 /* About*/
 .profile-image {
-  width: 30vw;
-  height: 30vw;
+  width: 30vh;
+  height: 30vh;
   border-radius: 50%;
   align-items: center;
 }
