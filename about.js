@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.body.classList.add("about");
 
   let img = document.createElement("img");
-  img.src = "../rose-profile-image.png";
+  img.src = "rose-profile-image.png";
   img.alt = "A picture of Rose sitting at a desk";
   img.classList.add("profile-image");
 
