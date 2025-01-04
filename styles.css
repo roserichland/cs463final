@@ -73,6 +73,16 @@ small {
   justify-content: center;
   align-items: center;
 }
+
+.landing-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  height: 100vh;
+}
+
 /* About*/
 .profile-image {
   width: 30vw;
