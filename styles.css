@@ -14,8 +14,8 @@
   --lightteal: #008080;
   --purple: #800080;
   --navy: #000080;
-  --cyan: #17a2b8;
-  --lightcyan: #00b9d5;
+  --cyan: #00788b;
+  --lightcyan: #5abccb;
   --violetred: #c71585;
   --red: #ff0000;
   --orange: #ffa500;
@@ -44,6 +44,10 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+footer {
+  color: var(--white);
 }
 
 h1 {
@@ -163,7 +167,7 @@ button:hover {
 }
 
 .btn.secondary {
-  background-color: var(--lightlightgray);
+  background-color: var(--white);
   color: var(--darkgray);
   margin-left: 10px;
 }
@@ -221,7 +225,7 @@ html {
 
 .navbar a:hover {
   background-color: var(--cyan);
-  color: var(--darkgray);
+  color: var(--white);
 }
 
 .navbar a:focus {
@@ -231,7 +235,7 @@ html {
 }
 
 .navbar .active {
-  background-color: var(--cyan);
+  background-color: var(--lightcyan);
   color: var(--darkgray);
 }
 
