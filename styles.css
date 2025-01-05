@@ -38,7 +38,7 @@ main {
   background-color: var(--lightlightgray);
   border-radius: 4px;
   width: 80%;
-  max-width: 1000px;
+  max-width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -111,6 +111,58 @@ small {
 }
 
 /* Previous Work */
+.card {
+  background-color: var(--white);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+  width: 45%;
+  min-width: 45%;
+  max-width: 45%;
+}
+
+.card .btn {
+  background-color: var(--cyan);
+  color: var(--white);
+  padding: 12px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.card h2 {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+section {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.projects main {
+  background-color: var(--lightlightgray);
+  padding: 40px;
+  min-width: 1000px;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  flex-wrap: wrap;
+}
 
 /* Form */
 .input-group {
@@ -124,10 +176,12 @@ small {
 }
 
 label {
-  display: block;
   font-weight: 600;
   margin-bottom: 5px;
   color: var(--darkgray);
+  display: inline-block;
+  margin-right: 20px;
+  font-weight: 400;
 }
 
 fieldset {
@@ -139,12 +193,6 @@ fieldset {
 legend {
   font-weight: 600;
   margin-bottom: 10px;
-}
-
-label {
-  display: inline-block;
-  margin-right: 20px;
-  font-weight: 400;
 }
 
 /* Buttons */
@@ -253,9 +301,15 @@ html {
 /* Media Queries */
 @media (min-width: 600px) {
   main {
-    padding: 40px;
-    width: 100%;
-    max-width: 700px;
+    background-color: var(--lightlightgray);
+    border-radius: 4px;
+    width: 80%;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   h2 {
@@ -281,13 +335,19 @@ html {
   fieldset {
     padding: 10px;
   }
+
+  .card {
+    min-width: 40%;
+    max-width: 45%;
+    margin: 10px;
+    align-items: center;
+  }
 }
 
 /* Large screen */
-@media (min-width: 1000px) {
+@media (max-width: 1000px) {
   main {
     padding: 50px;
-    max-width: 1000px;
   }
 
   .contact-form .about main {
@@ -300,6 +360,10 @@ html {
 
   h2 {
     font-size: 1.75rem;
+    justify-content: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
   }
 
   .input-group {
@@ -320,6 +384,7 @@ html {
   .button-container {
     display: flex;
     justify-content: center;
+    text-align: center;
     gap: 10px;
   }
 
@@ -330,10 +395,25 @@ html {
   .btn.secondary {
     padding: 14px 30px;
   }
+  .card {
+    min-width: 40%;
+    max-width: 45%;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  section {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 
 /* Small screen */
-@media (max-width: 599px) {
+@media (max-width: 500px) {
   main {
     padding: 20px;
     width: 100%;
@@ -384,6 +464,20 @@ html {
     margin: 0;
     margin-top: 10px;
   }
+
+  .card {
+    min-width: 70%;
+    max-width: 80%;
+    margin: 10px;
+  }
+
+  section {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 
 /* Very small screens */
@@ -422,5 +516,9 @@ html {
     font-size: 0.9rem;
     margin: 0;
     margin-top: 10px;
+  }
+  .card {
+    max-width: 100%;
+    min-width: 90%;
   }
 }
