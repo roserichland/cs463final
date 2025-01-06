@@ -59,6 +59,7 @@ h2 {
   font-size: 1.75rem;
   margin-bottom: 10px;
   color: var(--cyan);
+  text-align: center;
 }
 
 small {
@@ -66,6 +67,7 @@ small {
   color: var(--mediumgray);
   display: block;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .container {
@@ -157,11 +159,10 @@ small {
   border-radius: 8px;
   flex-wrap: wrap;
 }
-
 /* Form */
 .input-group {
-  margin-bottom: 15px;
-  width: 100%;
+  margin: 15px;
+
   padding: 12px;
   border: 1px solid;
   border-radius: 4px;
@@ -330,6 +331,7 @@ html {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    margin: 20px;
   }
 
   .input-group label {
@@ -382,16 +384,16 @@ html {
   }
 
   .contact-form .about main {
-    max-width: 8vw;
+    max-width: 80%;
   }
 
   h1 {
     font-size: 2rem;
+    justify-content: center;
   }
 
   h2 {
     font-size: 1.75rem;
-    justify-content: center;
     font-weight: bold;
     margin-bottom: 10px;
     text-align: center;
@@ -402,6 +404,7 @@ html {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    margin-right: 15px;
   }
 
   .input-group label {
@@ -410,6 +413,7 @@ html {
 
   .input-group input {
     width: 75%;
+    margin: 20px;
   }
 
   .button-container {
@@ -466,7 +470,8 @@ html {
     width: 100%;
   }
   .contact-form .about main {
-    min-width: 300px;
+    min-width: 40%;
+    max-width: 75%;
   }
   .card-container {
     width: 100%;
@@ -479,6 +484,7 @@ html {
 
   .input-group {
     display: block;
+    margin-right: 15px;
   }
 
   .input-group label {
@@ -487,6 +493,7 @@ html {
 
   .input-group input {
     width: 100%;
+    margin-right: 15px;
   }
 
   button {
@@ -538,7 +545,7 @@ html {
 /* Very small screens */
 @media (max-width: 400px) {
   .contact-form .about main {
-    min-width: 300px;
+    min-width: 40%;
   }
 
   h1 {
@@ -551,6 +558,7 @@ html {
 
   .input-group input {
     font-size: 0.875rem;
+    margin-right: 15px;
   }
 
   .button-container {
