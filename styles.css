@@ -14,8 +14,8 @@
   --lightteal: #008080;
   --purple: #800080;
   --navy: #000080;
-  --cyan: #00788b;
-  --lightcyan: #5abccb;
+  --cyan: #047195;
+  --lightcyan: #64b4dc;
   --violetred: #c71585;
   --red: #ff0000;
   --orange: #ffa500;
@@ -27,7 +27,6 @@ body {
   background-color: var(--cyan);
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   align-items: center;
   padding: 0;
   margin: 0;
@@ -96,7 +95,7 @@ small {
 }
 
 .landing-profile-image {
-  width: 100%;
+  width: 50%;
   height: auto;
   border-radius: 50%;
   align-items: center;
@@ -122,9 +121,8 @@ small {
   align-items: center;
   justify-content: center;
   transition: transform 0.3s ease;
-  width: 45%;
   min-width: 45%;
-  max-width: 45%;
+  max-width: 100%;
 }
 
 .card .btn {
@@ -142,18 +140,14 @@ small {
   font-size: 1.5rem;
 }
 
-section {
+.card-container {
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
+  align-items: center;
 }
 
 .projects main {
   background-color: var(--lightlightgray);
   padding: 40px;
-  min-width: 1000px;
   max-width: 100%;
   margin: 0 auto;
   display: flex;
@@ -202,6 +196,7 @@ button {
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  margin: 20px;
 }
 
 button:hover {
@@ -296,6 +291,21 @@ html {
     display: block;
     margin: 10px 0;
   }
+
+  section {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .section .projects {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 
 /* Media Queries */
@@ -304,7 +314,6 @@ html {
     background-color: var(--lightlightgray);
     border-radius: 4px;
     width: 80%;
-    max-width: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -337,15 +346,37 @@ html {
   }
 
   .card {
-    min-width: 40%;
-    max-width: 45%;
     margin: 10px;
     align-items: center;
+    min-width: 60%;
+    max-width: 60%;
+    margin: 10px;
+    flex: 1 1 45%;
+  }
+
+  section {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .section .projects {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
 /* Large screen */
-@media (max-width: 1000px) {
+@media (min-width: 1000px) {
   main {
     padding: 50px;
   }
@@ -396,22 +427,38 @@ html {
     padding: 14px 30px;
   }
   .card {
-    min-width: 40%;
+    min-width: 45%;
     max-width: 45%;
-    margin: 10px;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    justify-content: center;
   }
+
+  .card-container {
+    width: 100%;
+  }
+
   section {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .section .projects {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+  }
+
+  .about .container {
+    max-width: 95%;
+    min-width: 80%;
+    width: 60%;
   }
 }
-
 /* Small screen */
 @media (max-width: 500px) {
   main {
@@ -420,6 +467,10 @@ html {
   }
   .contact-form .about main {
     min-width: 300px;
+  }
+  .card-container {
+    width: 100%;
+    justify-content: center;
   }
 
   h2 {
@@ -471,12 +522,16 @@ html {
     margin: 10px;
   }
 
-  section {
+  .projects .section {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+  }
+
+  .card-container {
+    width: 100%;
+    justify-content: center;
   }
 }
 
@@ -520,5 +575,10 @@ html {
   .card {
     max-width: 100%;
     min-width: 90%;
+  }
+
+  .card-container {
+    width: 100%;
+    justify-content: center;
   }
 }
